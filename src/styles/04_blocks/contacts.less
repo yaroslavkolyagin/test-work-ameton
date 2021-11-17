@@ -1,0 +1,128 @@
+.contacts
+{
+	position: relative;
+	background-color: @clr-theme;
+	padding-top: @rem * 40;
+	padding-bottom: @rem * 55;
+	border-radius: @rem * 40;
+	color: @clr-white;
+	text-align: center;
+	overflow: hidden;
+	@media @max-768
+	{
+		padding: @rem * 20;
+		padding-bottom: @rem * 100;
+		padding-bottom: @rem * 100;
+	}
+	&__inner
+	{
+		position: relative;
+		z-index: 1;
+	}
+	&__note
+	{
+		margin-bottom: @rem * 40;
+		max-width: @rem * 535;
+		margin: 0 auto;
+		font-size: @rem * 17;
+		line-height: @rem * 23;
+		@media @max-768
+		{
+			font-size: @rem * 14;
+			line-height: @rem * 20;
+			margin-bottom: @rem * 15;
+		}
+	}
+	&__list
+	{
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		@media @max-768
+		{
+			flex-flow: wrap;
+		}
+		&-item
+		{
+			width: @rem * 160;
+			margin: 0 @rem * 4;
+			@media @max-768
+			{
+				flex-flow: column;
+				align-items: center;
+				justify-content: center;
+				width: 45%;
+				margin: @rem * 5;
+			}
+		}
+	}
+	&__decor-hand
+	{
+		position: absolute;
+		right: 0;
+		bottom: 0;
+		width: @rem * 280;
+		transition: @t;
+		@media @max-1400
+		{
+			width: @rem * 250;
+			right: @rem * -50
+		}
+		@media @max-768
+		{
+			width: @rem * 140;
+			right: @rem * 0;
+		}
+	}
+	&__decor-airplane-1
+	{
+		position: absolute;
+		top: @rem * 37;
+		left: @rem * 235;
+		width: @rem * 25;
+		@media @max-768
+		{
+			// top: @rem * 50;
+			// left: @rem * 20;
+			// transform: rotate(20deg);
+			display: none;
+		}
+	}
+	&__decor-airplane-2
+	{
+		position: absolute;
+		top: @rem * 60;
+		left: @rem * 55;
+		width: @rem * 140;
+		transform: rotate(30deg);
+		@media @max-768
+		{
+			top: auto;
+			right: auto;
+			left: @rem * 40;
+			margin: auto;
+			bottom: @rem * 10;
+			width: @rem * 80;
+			transform: rotate(40deg);
+
+		}
+	}
+	&__decor-airplane-3
+	{
+		position: absolute;
+		top: @rem * 100;
+		width: @rem * 45;
+		top: @rem * 180;
+		left: 0;
+		transform: rotate(70deg);
+		@media @max-768
+		{
+			top: auto;
+			bottom: @rem * 20;
+			left: 0;
+			right: 0;
+			margin: auto;
+			width: @rem * 30;
+		}
+	}
+}

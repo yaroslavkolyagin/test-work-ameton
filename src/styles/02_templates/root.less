@@ -1,0 +1,50 @@
+html
+{
+	font-family: @font-main;
+	font-size: @rem * 16;
+	color: @clr-black-alt;
+	@media @max-1024
+	{
+		font-size: @rem * 13;
+	}
+	@media @max-768
+	{
+		font-size: @rem * 16;
+	}
+}
+body
+{
+	padding-top: @rem * 40;
+	@media @max-768
+	{
+		padding-top: @rem * 20;
+	}
+}
+.layout-wrap
+{
+	max-width: @rem * 1280;
+	margin: 0 auto;
+	padding: 0 @rem * 40;
+	box-sizing: border-box;
+	@media @max-768
+	{
+		padding: 0 @rem * 15;
+	}
+}
+.layout
+{
+	margin-bottom: @rem * 80;
+	@media @max-768
+	{
+		margin-bottom: @rem * 40;
+	}
+}
+.layout-title
+{
+	text-align: center;
+	margin-bottom: @rem * 32;
+	@media @max-768
+	{
+		margin-bottom: @rem * 20;
+	}
+}

@@ -1,0 +1,108 @@
+.article
+{
+	padding: 0 @rem * 40;
+	box-sizing: border-box;
+	max-width: @rem * 750;
+	@media @max-768
+	{
+		padding: @rem * 15;
+	}
+	&__main
+	{
+		margin-bottom: @rem * 40;
+		@media @max-768
+		{
+			margin-bottom: @rem * 20;
+		}
+	}
+	&__title
+	{
+		font-family: @font-main-black;
+		font-size: @rem * 24;
+		line-height: @rem * 28;
+		margin-bottom: @rem * 16;
+		display: flex;
+		align-items: center;
+		&-share
+		{
+			display: block;
+			width: @rem * 19;
+			height: @rem * 19;
+			margin-left: @rem * 15;
+			margin-top: @rem * -5;
+			transition: @t;
+			&:hover
+			{
+				use
+				{
+					fill: @clr-theme;
+				}
+			}
+			&-svg
+			{
+				width: 100%;
+				height: 100%;
+			}
+			use
+			{
+				fill: @clr-accent;
+				transition: @t;
+			}
+		}
+	}
+	&__text
+	{
+		font-size: @rem * 15;
+		line-height: @rem * 21;
+	}
+	&__footer
+	{
+		&-title
+		{
+			font-family: @font-main-bold;
+			font-size: @rem * 13;
+			line-height: @rem * 15;
+			margin-bottom: @rem * 15;
+		}
+		&-list
+		{
+			display: flex;
+			@media @max-768
+			{
+				flex-wrap: wrap;
+				justify-content: space-between;
+			}
+			&-item
+			{
+				margin-right: @rem * 8;
+				@media @max-768
+				{
+					width: 48.5%;
+					margin-right: 0;
+					&:first-child
+					{
+						width: 100%;
+						margin-bottom: @rem * 10;
+					}
+				}
+				.btn
+				{
+					width: @rem * 225;
+					@media @max-768
+					{
+						width: 100%;
+					}
+				}
+				.btn-icon
+				{
+					width: @rem * 48;
+					height: @rem * 48;
+					@media @max-768
+					{
+						width: 100%;
+					}
+				}
+			}
+		}
+	}
+}
